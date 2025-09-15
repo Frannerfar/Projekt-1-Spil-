@@ -10,6 +10,7 @@ namespace Projekt_1__Spil_
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("x og o spil");
         }
     }
 }
