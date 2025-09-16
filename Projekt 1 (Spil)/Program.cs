@@ -152,18 +152,12 @@ namespace Projekt_1__Spil_
         // ===== Highscore System =====
 
 
-
-
-
-        static void PlayGame()
-            {
-            // Spillepladen er et array af 9 felter (0–8), som starter med tallene 1–9
-            // Så kan man se hvilke felter man kan vælge
-            char[] board = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-
-            // Variabler til at holde styr på hvor mange brikker spiller og computer har
-            int playerPieces = 0;
-            int computerPieces = 0;
+// ===== XO GAME =====
+static void XOGame()
+{
+    char[] board = { '1','2','3','4','5','6','7','8','9' };
+    bool gameRunning = true;
+    Random rand = new Random();
 
     while (gameRunning)
     {
