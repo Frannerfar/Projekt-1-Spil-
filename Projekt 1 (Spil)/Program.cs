@@ -24,8 +24,8 @@ namespace Projekt_1__Spil_
                 Console.WriteLine();
                 Console.WriteLine("Velkommen til spil menu");
                 Console.WriteLine("Tryk 1 for:  Sten, Saks, Papir");
-                Console.WriteLine("Tryk 2 for:  Virker ikke længere");
                 Console.WriteLine("Tryk 3 for:  X & O, meget bedre");
+                Console.WriteLine("Tryk 3 for:  BlackJack (21)");
                 Console.WriteLine("q. Afslut");
                 Console.Write("\nVælg et spil: ");
 
@@ -40,11 +40,9 @@ namespace Projekt_1__Spil_
                         break;
 
                     case "2":
-                        Console.WriteLine("Ude af drift");
-                        break;
-                    case "3":
                         PlayGame();   // Kalder vores spilfunktion
-                        break ;
+                        break;
+                 
                     case "q": // ToLower tager hensyn til 'q' og 'Q'
 
                         KørMenu = false;
