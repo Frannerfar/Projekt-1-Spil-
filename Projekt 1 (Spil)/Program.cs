@@ -173,11 +173,9 @@ namespace Projekt_1__Spil_
 
         static void PlayGame()
             {
-            
-                //Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Velkommen til X og O!");
-                //Console.ForegroundColor = ConsoleColor.Black;
-            while (true)   // Kører uendeligt indtil vi bruger break
+                
+             while (true)   // Kører uendeligt indtil vi bruger break
                 {
                     PrintBoard(); // Tegner spillepladen
                     PlayerMove(); // Spilleren vælger et felt
@@ -199,6 +197,7 @@ namespace Projekt_1__Spil_
                     }
                 }
             }
+        
 
             // Tegner spillepladen i konsollen
             static void PrintBoard()
@@ -274,7 +273,7 @@ namespace Projekt_1__Spil_
             }
         //===========================================================================================
 
-
+        // BlackJack (21)
         static void StartGame()
         {
 
