@@ -179,15 +179,27 @@ namespace Projekt_1__Spil_
                         break;              // Afslutter spillet
                     }
 
-                    ComputerMove();         // Computeren vælger et felt
-                    if (CheckWin('O'))      // Tjekker om computeren har vundet
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Computeren vandt!");
-                        break;              // Afslutter spillet
-                    }
-                }
-            }
+        // Tjek om brættet er fyldt
+        if (IsBoardFull(board))
+        {
+            PrintBoard(board);
+            Console.WriteLine("Uafgjort!");
+            break;
+        }
+
+        // Computerens tur
+        ComputerMove(board, rand);
+        if (CheckWin(board, 'O'))
+        {
+            PrintBoard(board);
+            Console.WriteLine("Computeren vandt!");
+            break;
+        }
+    }
+
+    Console.WriteLine("\nTryk på en tast for at gå tilbage til menuen...");
+    Console.ReadKey();
+}
 
 // ===== Hjælpefunktioner =====
 
