@@ -7,9 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc0565ae-d7e6-4ca2-90b4-7152c667d31b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Projekt 1 (Spil)/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt 1 (Spil)/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="cc0565ae-d7e6-4ca2-90b4-7152c667d31b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="RasmusTest" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,7 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Project.Projekt 1 (Spil).executor": "Debug",
+    ".NET Project.Projekt 1 (Spil).executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
