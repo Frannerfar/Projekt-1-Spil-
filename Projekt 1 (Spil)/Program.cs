@@ -30,12 +30,11 @@ namespace Projekt_1__Spil_
         while (true)   // Kører uendeligt indtil vi bruger break
         {
             PrintBoard(); // Tegner spillepladen
-            PlayerMove();           // Spilleren vælger et felt
+            PlayerMove(); // Spilleren vælger et felt
             if (CheckWin('X')) // Tjekker om spilleren har vundet
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Du vandt!");
-                Console.ForegroundColor = ConsoleColor.Black;
                 break;              // Afslutter spillet
             }
 
@@ -44,7 +43,6 @@ namespace Projekt_1__Spil_
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Computeren vandt!");
-                Console.ForegroundColor = ConsoleColor.Black;
                 break;              // Afslutter spillet
             }
         }
