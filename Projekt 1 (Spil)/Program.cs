@@ -200,26 +200,18 @@ namespace Projekt_1__Spil_
                 Console.WriteLine($"{board[6]} | {board[7]} | {board[8]}");
             }
 
-            // Spilleren vælger et felt
-            static void PlayerMove()
-            {
-                Console.Write("Vælg en position (1-9): ");
-                int pos;
-
-                // Vi bruger int.TryParse til at sikre at spilleren skriver et gyldigt tal
-                // while‐løkke kører indtil vi har et tal mellem 1 og 9
-                // og feltet ikke allerede er taget af X eller O
-                while (!int.TryParse(Console.ReadLine(), out pos)
-                       || pos < 1 || pos > 9
-                       || board[pos - 1] == 'X' || board[pos - 1] == 'O')
-                {
-                    Console.Write("Ugyldigt valg, prøv igen: ");
-                }
-
-                // Når vi har et gyldigt felt → sæt et X på pladen
-                board[pos - 1] = 'X';
-                playerPieces++;
-            }
+static void PlayerMove(char[] board)
+{
+    int pos;
+    Console.Write("Vælg en position (1-9): ");
+    while (!int.TryParse(Console.ReadLine(), out pos) 
+           || pos < 1 || pos > 9 
+           || board[pos - 1] == 'X' || board[pos - 1] == 'O')
+    {
+        Console.Write("Ugyldigt valg, prøv igen: ");
+    }
+    board[pos - 1] = 'X';
+}
 
             // Computeren vælger tilfældigt et felt
             static void ComputerMove()
