@@ -219,20 +219,13 @@ static void PlayerMove(char[] board)
     board[pos - 1] = 'X';
 }
 
-            // Computeren vælger tilfældigt et felt
-            static void ComputerMove()
-            {
-                Random rand = new Random();
-                int pos;
-
-                // Find et tilfældigt felt 1–9 der ikke er optaget
-                do { pos = rand.Next(1, 10); }
-                while (board[pos - 1] == 'X' || board[pos - 1] == 'O');
-
-                // Sæt et O i feltet
-                board[pos - 1] = 'O';
-                computerPieces++;
-            }
+static void ComputerMove(char[] board, Random rand)
+{
+    int pos;
+    do { pos = rand.Next(1, 10); }
+    while (board[pos - 1] == 'X' || board[pos - 1] == 'O');
+    board[pos - 1] = 'O';
+}
 
             // Tjekker om en spiller har 3 på stribe
             static bool CheckWin(char symbol)
