@@ -23,8 +23,9 @@ namespace Projekt_1__Spil_
                 // Tekst i menuen 
                 Console.WriteLine();
                 Console.WriteLine("Velkommen til spil menu");
-                Console.WriteLine("spil 1: Sten, Saks, Papir");
-                Console.WriteLine("spil 2: X & O (Kryds og Bolle)");
+                Console.WriteLine("Tryk 1 for:  Sten, Saks, Papir");
+                Console.WriteLine("Tryk 2 for:  Virker ikke længere");
+                Console.WriteLine("Tryk 3 for:  X & O, meget bedre");
                 Console.WriteLine("q. Afslut");
                 Console.Write("\nVælg et spil: ");
 
@@ -39,12 +40,9 @@ namespace Projekt_1__Spil_
                         break;
 
                     case "2":
-                        XOGame();
+                        Console.WriteLine("Ude af drift");
                         break;
                     case "3":
-                        Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Velkommen til X og O!");
-                        Console.ForegroundColor = ConsoleColor.Black;
                         PlayGame();   // Kalder vores spilfunktion
                         break ;
                     case "q": // ToLower tager hensyn til 'q' og 'Q'
@@ -152,220 +150,20 @@ namespace Projekt_1__Spil_
 
         }//================================================================================
 
-        // ====== X & 0 ======
-        static void XOGame()
-        {
-            char[,] braet = new char[3, 3];
-            InitBreat(braet);
 
-            int spillerBrik = 0;
-            int computerBrik = 0;
-            bool spillerTur = true;
-            bool spilIgang = true;
-
-
-            while (spilIgang)
-            {
-                Console.Clear();
-                Printbreat(braet);
-
-                if (CheckVinder(braet, 'X'))
-                {
-                    Console.WriteLine("Du Vinder!");
-                    spilIgang = false;
-                    break;
-                }
-                else if (CheckVinder(braet, 'O'))
-                {
-                    Console.WriteLine("Computer Vinder!");
-                    spilIgang = false;
-                    break;
-                }
-
-                if (spillerTur)
-                {
-                    Console.WriteLine("Din tur (X)");
-                    if (spillerBrik < 3)
-                    {
-                        // Placer ny brik 
-                        PlacerBrik(braet, 'X');
-                        spillerBrik++;
-                    }
-                    else
-                    {
-                        // Flyt en brik 
-                        PlacerBrik(braet, 'X');
-                    }
-
-                }
-                else
-                {
-                    Console.WriteLine("Computerens tur (O)");
-                    Random rand = new Random();
-
-                    if (computerBrik < 3)
-                    {
-                        //Computer placerer tilfældigt på braettet
-                        PlacerRandom(braet, 'O', rand);
-                        computerBrik++;
-                    }
-                    else
-                    {
-                        //Computeren flytter en tilfældig brik på braettet
-                        FlytRandom(braet, 'O', rand);
-                    }
-                }
-
-                spillerTur = !spillerTur;
-            }
-
-            Console.WriteLine("Tryk på en tast for at vende tilbage til menuen: ");
-            Console.ReadLine();
-
-        }
-        // ===== Hjælpefunktioner til XO =====
-        static void InitBreat(char[,] braet)
-        {
-            for (int i = 0; i < 3; i++)
-                for (int j = 0; j < 3; j++)
-                    braet[i, j] = ' ';
-        }
-
-        static void Printbreat(char[,] breat)
-        {
-            Console.WriteLine(" 0 1 2");
-            for (int i = 0; i < 3; i++)
-            {
-                Console.Write(i + "");
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.Write(breat[i, j]);
-                    if (j < 2) Console.Write("|");
-                }
-                Console.WriteLine();
-                if (i < 2) Console.WriteLine("  -+-+-");
-            }
-
-        }
-
-        static bool CheckVinder(char[,] breat, char symbol)
-        {
-            // Tjekker om man vinder i Rækker
-            for (int i = 0; i < 3; i++)
-                if (breat[i, 0] == symbol && breat[i, 1] == symbol && breat[i, 2] == symbol) return true;
-            // Tjekker om man vinder i Koloner
-            for (int j = 0; j < 3; j++)
-                if (breat[j, 0] == symbol && breat[j, 1] == symbol && breat[j, 2] == symbol) return true;
-            // Tjekker om man vinder diagonalt 
-            if (breat[0, 0] == symbol && breat[1, 1] == symbol && breat[2, 2] == symbol) return true;
-            if (breat[0, 2] == symbol && breat[1, 1] == symbol && breat[0, 2] == symbol) return true;
-
-            return false;
-        }
-        // ===== Spiller funktioner X&O =====
-        static void PlacerBrik(char[,] braet, char symbol)
-        {
-            while (true)
-            {
-                while (true)
-                {
-                    Console.Write("Indtast række (0-2): ");
-                    int row = int.Parse(Console.ReadLine());
-                    Console.Write("Indtast kolonne (0-2): ");
-                    int col = int.Parse(Console.ReadLine());
-
-                    if (braet[row, col] == ' ')
-                    {
-                        braet[row, col] = symbol;
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Feltet er optaget, prøv igen!");
-                    }
-                }
-
-            }
-        }
-
-        static void FlytBrik(char[,] braet, char symbol)
-        {
-            while (true)
-            {
-                Console.Write("Vælg brik du vil flytte (række): ");
-                int r1 = int.Parse(Console.ReadLine());
-                Console.Write("Vælg brik du vil flytte (kolonne): ");
-                int k1 = int.Parse(Console.ReadLine());
-
-                if (braet[r1, k1] == symbol)
-                {
-                    Console.Write("Vælg ny række (0-2): ");
-                    int r2 = int.Parse(Console.ReadLine());
-                    Console.Write("Vælg ny kolonne (0-2): ");
-                    int k2 = int.Parse(Console.ReadLine());
-
-                    if (braet[r2, k2] == ' ')
-                    {
-                        braet[r1, k1] = ' ';
-                        braet[r2, k2] = symbol;
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Det felt er optaget!");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Der er ingen af dine brikker der!");
-                }
-            }
-        }
-        // ===== Computer funktioner X&O =====
-        static void PlacerRandom(char[,] braet, char symbol, Random rand)
-        {
-            while (true)
-            {
-                int r = rand.Next(0, 3);
-                int k = rand.Next(0, 3);
-                if (braet[r, k] == ' ')
-                {
-                    braet[r, k] = symbol;
-                    break;
-                }
-            }
-        }
-        static void FlytRandom(char[,] braet, char symbol, Random rand)
-        {
-            while (true)
-            {
-                int r1 = rand.Next(0, 3);
-                int k1 = rand.Next(0, 3);
-                if (braet[r1, k1] == symbol)
-                {
-                    int r2 = rand.Next(0, 3);
-                    int k2 = rand.Next(0, 3);
-                    if (braet[r2, k2] == ' ')
-                    {
-                        braet[r1, k1] = ' ';
-                        braet[r2, k2] = symbol;
-                        break;
-                    }
-                }
-
-
-            }
-        }
         // ===== Highscore System =====
-        
 
 
-        
-            
-           
-            static void PlayGame()
+
+
+
+        static void PlayGame()
             {
-                while (true)   // Kører uendeligt indtil vi bruger break
+            
+                //Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Velkommen til X og O!");
+                //Console.ForegroundColor = ConsoleColor.Black;
+            while (true)   // Kører uendeligt indtil vi bruger break
                 {
                     PrintBoard(); // Tegner spillepladen
                     PlayerMove(); // Spilleren vælger et felt
@@ -453,6 +251,10 @@ namespace Projekt_1__Spil_
                         return true;  // Spilleren har vundet
                 }
                 return false;  // Ingen vinder endnu
+                
+                //===== Nice to have features ======
+                // Spørger om brugeren vil spille igen 
+                // En quit option efter spillet Console.writeLine ("Tryk q for at gå tilbage til menuen")
             }
         }
     }
