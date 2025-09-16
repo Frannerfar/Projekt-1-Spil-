@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Diagnostics.Eventing.Reader;
-using System.Runtime.CompilerServices;
-using System.Security.Permissions;
 
 namespace Projekt_1__Spil_
 {
@@ -24,7 +21,7 @@ namespace Projekt_1__Spil_
                 Console.WriteLine();
                 Console.WriteLine("Velkommen til spil menu");
                 Console.WriteLine("Tryk 1 for:  Sten, Saks, Papir");
-                Console.WriteLine("Tryk 3 for:  X & O, meget bedre");
+                Console.WriteLine("Tryk 2 for:  X & O, meget bedre");
                 Console.WriteLine("Tryk 3 for:  BlackJack (21)");
                 Console.WriteLine("q. Afslut");
                 Console.Write("\nVælg et spil: ");
@@ -40,7 +37,7 @@ namespace Projekt_1__Spil_
                         break;
 
                     case "2":
-                        PlayGame();   // Kalder vores spilfunktion
+                        XOGame();   // Kalder vores spilfunktion
                         break;
                  
                     case "q": // ToLower tager hensyn til 'q' og 'Q'
@@ -150,14 +147,15 @@ namespace Projekt_1__Spil_
 
 
         // ===== Highscore System =====
-
+        
 
 // ===== XO GAME =====
+        static char[] board = { '1','2','3','4','5','6','7','8','9' };
+        static bool gameRunning = true;
+        static Random rand = new Random();
 static void XOGame()
 {
-    char[] board = { '1','2','3','4','5','6','7','8','9' };
-    bool gameRunning = true;
-    Random rand = new Random();
+    
 
     while (gameRunning)
     {
@@ -195,6 +193,7 @@ static void XOGame()
 }
 
 // ===== Hjælpefunktioner =====
+
 
 static void PrintBoard(char[] board)
 {
@@ -260,6 +259,6 @@ static bool IsBoardFull(char[] board)
                 // En quit option efter spillet Console.writeLine ("Tryk q for at gå tilbage til menuen")
             }
         }
-    }
+    
 
 

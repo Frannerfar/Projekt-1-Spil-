@@ -9,6 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cc0565ae-d7e6-4ca2-90b4-7152c667d31b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Projekt 1 (Spil)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projekt 1 (Spil)/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt 1 (Spil)/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt 1 (Spil)/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt 1 (Spil)/Projekt 1 (Spil).csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt 1 (Spil)/Projekt 1 (Spil).csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,12 +34,12 @@
     &quot;assignee&quot;: &quot;PhilipBrydeProgrammer&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Frannerfar/Projekt-1-Spil-Rasmus-Philip.git",
-    "accountId": "d841adac-1779-4f3b-99b3-3057efed12b2"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Frannerfar/Projekt-1-Spil-Rasmus-Philip.git&quot;,
+    &quot;accountId&quot;: &quot;d841adac-1779-4f3b-99b3-3057efed12b2&quot;
   }
-}]]></component>
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -100,6 +101,7 @@
       <workItem from="1757932421101" duration="131000" />
       <workItem from="1758014212653" duration="297000" />
       <workItem from="1758015331925" duration="335000" />
+      <workItem from="1758015746425" duration="2489000" />
     </task>
     <task id="LOCAL-00001" summary="x og o spil">
       <option name="closed" value="true" />
@@ -125,7 +127,71 @@
       <option name="project" value="LOCAL" />
       <updated>1758015634801</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="brackets rykket auto">
+      <option name="closed" value="true" />
+      <created>1758017851504</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758017851504</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ændring af boardlayout">
+      <option name="closed" value="true" />
+      <created>1758017882229</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758017882229</updated>
+    </task>
+    <task id="LOCAL-00006" summary="kommentar til koden">
+      <option name="closed" value="true" />
+      <created>1758017893592</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1758017893592</updated>
+    </task>
+    <task id="LOCAL-00007" summary="kommentar til koden">
+      <option name="closed" value="true" />
+      <created>1758017905246</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1758017905246</updated>
+    </task>
+    <task id="LOCAL-00008" summary="brackets og kommentar">
+      <option name="closed" value="true" />
+      <created>1758017914892</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758017914892</updated>
+    </task>
+    <task id="LOCAL-00009" summary="kommentar og new random ændring">
+      <option name="closed" value="true" />
+      <created>1758017936386</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1758017936386</updated>
+    </task>
+    <task id="LOCAL-00010" summary="kommentar til koden">
+      <option name="closed" value="true" />
+      <created>1758017945990</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1758017945990</updated>
+    </task>
+    <task id="LOCAL-00011" summary="kommentar til koden">
+      <option name="closed" value="true" />
+      <created>1758017960656</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1758017960656</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +215,12 @@
     <MESSAGE value="x og o spil" />
     <MESSAGE value="tilføjet x og o spillet" />
     <MESSAGE value="gitignore til at github desktop ikke irretere os hver gang vi åbner en branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore til at github desktop ikke irretere os hver gang vi åbner en branch" />
+    <MESSAGE value="brackets rykket auto" />
+    <MESSAGE value="ændring af boardlayout" />
+    <MESSAGE value="brackets og kommentar" />
+    <MESSAGE value="kommentar og new random ændring" />
+    <MESSAGE value="kommentar til koden" />
+    <option name="LAST_COMMIT_MESSAGE" value="kommentar til koden" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
