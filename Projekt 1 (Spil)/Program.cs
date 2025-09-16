@@ -235,17 +235,26 @@ static bool CheckWin(char[] board, char symbol)
         {0,4,8}, {2,4,6}             // diagonaler
     };
 
-                // Loop gennem alle kombinationer
-                for (int i = 0; i < 8; i++)
-                {
-                    // Hvis alle tre felter indeholder samme symbol (X eller O)
-                    if (board[wins[i, 0]] == symbol
-                     && board[wins[i, 1]] == symbol
-                     && board[wins[i, 2]] == symbol)
-                        return true;  // Spilleren har vundet
-                }
-                return false;  // Ingen vinder endnu
-                
+    for (int i = 0; i < wins.GetLength(0); i++)
+    {
+        if (board[wins[i,0]] == symbol &&
+            board[wins[i,1]] == symbol &&
+            board[wins[i,2]] == symbol)
+            return true;
+    }
+    return false;
+}
+
+static bool IsBoardFull(char[] board)
+{
+    foreach (char c in board)
+    {
+        if (c != 'X' && c != 'O') return false;
+    }
+    return true;
+}
+
+        
                 //===== Nice to have features ======
                 // Spørger om brugeren vil spille igen 
                 // En quit option efter spillet Console.writeLine ("Tryk q for at gå tilbage til menuen")
