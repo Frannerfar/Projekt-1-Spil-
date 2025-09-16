@@ -1,0 +1,19 @@
+# Rider
+.idea/
+
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
