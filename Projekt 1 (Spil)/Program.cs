@@ -189,16 +189,17 @@ namespace Projekt_1__Spil_
                 }
             }
 
-            // Tegner spillepladen i konsollen
-            static void PrintBoard(char[] board)
-            {
-                Console.Clear();   // Rydder skærmen
-                Console.WriteLine($"{board[0]} | {board[1]} | {board[2]}");
-                Console.WriteLine("---------");
-                Console.WriteLine($"{board[3]} | {board[4]} | {board[5]}");
-                Console.WriteLine("---------");
-                Console.WriteLine($"{board[6]} | {board[7]} | {board[8]}");
-            }
+// ===== Hjælpefunktioner =====
+
+static void PrintBoard(char[] board)
+{
+    Console.Clear();
+    Console.WriteLine($"{board[0]} | {board[1]} | {board[2]}");
+    Console.WriteLine("--+---+--");
+    Console.WriteLine($"{board[3]} | {board[4]} | {board[5]}");
+    Console.WriteLine("--+---+--");
+    Console.WriteLine($"{board[6]} | {board[7]} | {board[8]}");
+}
 
 static void PlayerMove(char[] board)
 {
