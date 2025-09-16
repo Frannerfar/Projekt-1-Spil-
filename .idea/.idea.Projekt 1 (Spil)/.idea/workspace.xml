@@ -7,11 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc0565ae-d7e6-4ca2-90b4-7152c667d31b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Projekt 1 (Spil)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projekt 1 (Spil)/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt 1 (Spil)/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt 1 (Spil)/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt 1 (Spil)/Projekt 1 (Spil).csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt 1 (Spil)/Projekt 1 (Spil).csproj" afterDir="false" />
-    </list>
+    <list default="true" id="cc0565ae-d7e6-4ca2-90b4-7152c667d31b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +97,7 @@
       <workItem from="1757932421101" duration="131000" />
       <workItem from="1758014212653" duration="297000" />
       <workItem from="1758015331925" duration="335000" />
-      <workItem from="1758015746425" duration="2489000" />
+      <workItem from="1758015746425" duration="2550000" />
     </task>
     <task id="LOCAL-00001" summary="x og o spil">
       <option name="closed" value="true" />
@@ -191,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758017960656</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix implementering af x og o">
+      <option name="closed" value="true" />
+      <created>1758018369431</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1758018369431</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +224,8 @@
     <MESSAGE value="brackets og kommentar" />
     <MESSAGE value="kommentar og new random ændring" />
     <MESSAGE value="kommentar til koden" />
-    <option name="LAST_COMMIT_MESSAGE" value="kommentar til koden" />
+    <MESSAGE value="fix implementering af x og o" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix implementering af x og o" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
