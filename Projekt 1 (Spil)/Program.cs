@@ -9,11 +9,11 @@ namespace Projekt_1__Spil_
     {
         // Spillepladen er et array af 9 felter (0–8), som starter med tallene 1–9
         // Så kan man se hvilke felter man kan vælge
-        static char[] board = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+        //static char[] board = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
         // Variabler til at holde styr på hvor mange brikker spiller og computer har
-        static int playerPieces = 0;
-        static int computerPieces = 0;
+        //static int playerPieces = 0;
+        //static int computerPieces = 0;
         static void Main(string[] args)
         {
             bool KørMenu = true;
@@ -157,9 +157,16 @@ namespace Projekt_1__Spil_
 
         static void PlayGame()
             {
-            
-                //Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Velkommen til X og O!");
+            // Spillepladen er et array af 9 felter (0–8), som starter med tallene 1–9
+            // Så kan man se hvilke felter man kan vælge
+            char[] board = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+
+            // Variabler til at holde styr på hvor mange brikker spiller og computer har
+            int playerPieces = 0;
+            int computerPieces = 0;
+
+            //Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Velkommen til X og O!");
                 //Console.ForegroundColor = ConsoleColor.Black;
             while (true)   // Kører uendeligt indtil vi bruger break
                 {
@@ -183,7 +190,7 @@ namespace Projekt_1__Spil_
             }
 
             // Tegner spillepladen i konsollen
-            static void PrintBoard()
+            static void PrintBoard(char[] board)
             {
                 Console.Clear();   // Rydder skærmen
                 Console.WriteLine($"{board[0]} | {board[1]} | {board[2]}");
