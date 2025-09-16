@@ -227,15 +227,13 @@ static void ComputerMove(char[] board, Random rand)
     board[pos - 1] = 'O';
 }
 
-            // Tjekker om en spiller har 3 på stribe
-            static bool CheckWin(char symbol)
-            {
-                // Alle mulige vinderrækker (rækker, kolonner, diagonaler)
-                int[,] wins = {
-            {0,1,2}, {3,4,5}, {6,7,8},   // rækker
-            {0,3,6}, {1,4,7}, {2,5,8},   // kolonner
-            {0,4,8}, {2,4,6}             // diagonaler
-        };
+static bool CheckWin(char[] board, char symbol)
+{
+    int[,] wins = {
+        {0,1,2}, {3,4,5}, {6,7,8},   // rækker
+        {0,3,6}, {1,4,7}, {2,5,8},   // kolonner
+        {0,4,8}, {2,4,6}             // diagonaler
+    };
 
                 // Loop gennem alle kombinationer
                 for (int i = 0; i < 8; i++)
