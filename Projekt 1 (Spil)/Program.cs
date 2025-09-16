@@ -165,19 +165,18 @@ namespace Projekt_1__Spil_
             int playerPieces = 0;
             int computerPieces = 0;
 
-            //Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Velkommen til X og O!");
-                //Console.ForegroundColor = ConsoleColor.Black;
-            while (true)   // Kører uendeligt indtil vi bruger break
-                {
-                    PrintBoard(); // Tegner spillepladen
-                    PlayerMove(); // Spilleren vælger et felt
-                    if (CheckWin('X')) // Tjekker om spilleren har vundet
-                    {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Du vandt!");
-                        break;              // Afslutter spillet
-                    }
+    while (gameRunning)
+    {
+        PrintBoard(board);
+
+        // Spillerens tur
+        PlayerMove(board);
+        if (CheckWin(board, 'X'))
+        {
+            PrintBoard(board);
+            Console.WriteLine("Du vandt!");
+            break;
+        }
 
         // Tjek om brættet er fyldt
         if (IsBoardFull(board))
