@@ -32,7 +32,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Frannerfar/Projekt-1-Spil-.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Frannerfar/Projekt-1-Spil-Rasmus-Philip.git&quot;,
     &quot;accountId&quot;: &quot;d841adac-1779-4f3b-99b3-3057efed12b2&quot;
   }
 }</component>
@@ -51,7 +51,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Philip-testSpil&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -95,6 +95,9 @@
       <workItem from="1757928746224" duration="1536000" />
       <workItem from="1757931251949" duration="42000" />
       <workItem from="1757932421101" duration="131000" />
+      <workItem from="1758019037685" duration="27000" />
+      <workItem from="1758019097142" duration="10000" />
+      <workItem from="1758019130630" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="x og o spil">
       <option name="closed" value="true" />
