@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc0565ae-d7e6-4ca2-90b4-7152c667d31b" name="Changes" comment="" />
+    <list default="true" id="cc0565ae-d7e6-4ca2-90b4-7152c667d31b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Projekt 1 (Spil)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projekt 1 (Spil)/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt 1 (Spil)/Projekt 1 (Spil).csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt 1 (Spil)/Projekt 1 (Spil).csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,12 +33,12 @@
     &quot;assignee&quot;: &quot;PhilipBrydeProgrammer&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Frannerfar/Projekt-1-Spil-.git&quot;,
-    &quot;accountId&quot;: &quot;d841adac-1779-4f3b-99b3-3057efed12b2&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Frannerfar/Projekt-1-Spil-Rasmus-Philip.git",
+    "accountId": "d841adac-1779-4f3b-99b3-3057efed12b2"
   }
-}</component>
+}]]></component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -45,21 +48,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Projekt 1 (Spil).executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "RasmusTest",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Projekt 1 (Spil).executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;RasmusTest&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Projekt 1 (Spil)" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -96,6 +99,7 @@
       <workItem from="1757931251949" duration="42000" />
       <workItem from="1757932421101" duration="131000" />
       <workItem from="1758014212653" duration="297000" />
+      <workItem from="1758015331925" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="x og o spil">
       <option name="closed" value="true" />
@@ -113,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757929785951</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="gitignore til at github desktop ikke irretere os hver gang vi åbner en branch">
+      <option name="closed" value="true" />
+      <created>1758015634801</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758015634801</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +148,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="x og o spil" />
     <MESSAGE value="tilføjet x og o spillet" />
-    <option name="LAST_COMMIT_MESSAGE" value="tilføjet x og o spillet" />
+    <MESSAGE value="gitignore til at github desktop ikke irretere os hver gang vi åbner en branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore til at github desktop ikke irretere os hver gang vi åbner en branch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
