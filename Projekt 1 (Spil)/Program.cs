@@ -25,7 +25,7 @@ namespace Projekt_1__Spil_
                 Console.WriteLine("Velkommen til spil menu");
                 Console.WriteLine("Tryk 1 for:  Sten, Saks, Papir");
                 Console.WriteLine("Tryk 2 for:  BlackJack (21)");
-                Console.WriteLine("Tryk 3 for:  X & O, meget bedre");
+                Console.WriteLine("Tryk 3 for:  X & O");
                 Console.WriteLine("q. Afslut");
                 Console.Write("\nVælg et spil: ");
 
@@ -169,7 +169,7 @@ namespace Projekt_1__Spil_
 
 
 
-
+        //X og O
 
         static void PlayGame()
             {
@@ -185,6 +185,7 @@ namespace Projekt_1__Spil_
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("Du vandt!");
+                        Console.ForegroundColor = ConsoleColor.White;
                         break;              // Afslutter spillet
                     }
 
@@ -193,6 +194,7 @@ namespace Projekt_1__Spil_
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Computeren vandt!");
+                        Console.ForegroundColor = ConsoleColor.White;
                         break;              // Afslutter spillet
                     }
                 }
