@@ -277,7 +277,7 @@ namespace Projekt_1__Spil_
 
         static void StartGame()
         {
-
+            //opretter de spiller- og dealer hånden
             string[] playerHand = new string[0];
             string[] dealerHand = new string[0];
 
@@ -287,14 +287,14 @@ namespace Projekt_1__Spil_
 
             dealerHand = AddCard(dealerHand, DrawCard());
             dealerHand = AddCard(dealerHand, DrawCard());
-
+            //Spillerens tur (Vil returner true hvis man trækker over 21(Bust))
             bool playerBust = PlayerTurn(ref playerHand, dealerHand);
-
+            //Her bliver det Dealerens tur hvis spiller ikke er gået bust
             if (!playerBust)
             {
                 DealerTurn(ref dealerHand);
             }
-
+            // Vinder afgøres her
             DetermineWinner(playerHand, dealerHand, playerBust);
         }
 
@@ -305,15 +305,18 @@ namespace Projekt_1__Spil_
 
             while (playerTurn)
             {
+                //Viser både spiller og dealers hånd (dealers første kort)
                 Console.WriteLine("Dine kort: " + string.Join(", ", playerHand) + $" (Total: {HandValue(playerHand)})");
                 Console.WriteLine($"Dealers kort: {dealerHand[0]}, ?");
-
+                // Valget mellem om vil trække et kort eller stå
                 Console.WriteLine("\nVil du [H]it eller [S]tand?");
                 string choice = Console.ReadLine().ToLower();
 
                 if (choice == "h")
                 {
+                    //Tilføjer et nyt kort til spillerens hånd
                     playerHand = AddCard(playerHand, DrawCard());
+                    //Tjekker om man går over 21(bust)
                     if (HandValue(playerHand) > 21)
                     {
                         Console.WriteLine("Du trækker et kort og går bust!");
@@ -323,6 +326,7 @@ namespace Projekt_1__Spil_
                 }
                 else if (choice == "s")
                 {
+                    //Spilleren stopper sin tur
                     playerTurn = false;
                 }
             }
@@ -334,7 +338,7 @@ namespace Projekt_1__Spil_
         {
             Console.WriteLine("\n--- Dealerens tur ---");
             Console.WriteLine("Dealerens kort: " + string.Join(", ", dealerHand) + $" (Total: {HandValue(dealerHand)})");
-
+            //Dealeren trækker kort indtil han mindst har 17 
             while (HandValue(dealerHand) < 17)
             {
                 Console.WriteLine("Dealer trækker et kort...");
@@ -347,11 +351,11 @@ namespace Projekt_1__Spil_
         {
             int playerTotal = HandValue(playerHand);
             int dealerTotal = HandValue(dealerHand);
-
+            //Slut resultatet vises 
             Console.WriteLine("\n--- Resultat ---");
             Console.WriteLine($"Dine kort: {string.Join(", ", playerHand)} (Total: {playerTotal})");
             Console.WriteLine($"Dealerens kort: {string.Join(", ", dealerHand)} (Total: {dealerTotal})");
-
+            //Afgører vinderen udfra reglerne
             if (playerBust)
             {
                 Console.WriteLine("Du tabte! (Bust)");
@@ -378,12 +382,14 @@ namespace Projekt_1__Spil_
         static Random random = new Random();
         static string DrawCard()
         {
+            //De forskellige kort værdier 
             string[] cards = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
             return cards[random.Next(cards.Length)];
         }
 
         static int CardValue(string card)
         {
+            //initalisere værdien for et billedkort og ES
             if (card == "J" || card == "Q" || card == "K")
                 return 10;
             else if (card == "A")
@@ -396,7 +402,7 @@ namespace Projekt_1__Spil_
         {
             int total = 0;
             int aceCount = 0;
-
+            // beregner summen af ens kort
             foreach (string card in hand)
             {
                 int value = CardValue(card);
@@ -416,6 +422,7 @@ namespace Projekt_1__Spil_
 
         static string[] AddCard(string[] hand, string card)
         {
+            //opretter et nyt array, hvor pladsen er en større for det ny tilføjet kort
             string[] newHand = new string[hand.Length + 1];
             for (int i = 0; i < hand.Length; i++)
             {
